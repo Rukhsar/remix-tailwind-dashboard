@@ -65,12 +65,12 @@ export default function Index() {
 
 			{/* Users Table */}
 			<table className="w-full border-collapse  shadow-sm rounded overflow-hidden">
-				<thead className="bg-slate-100">
+				<thead className="bg-slate-50">
 					<tr>
 						{["Name", "Email", "Role"].map((column) => (
 							<th
 								key={column}
-								className="bg-slate-200 border-b-2 border-slate-200 px-4 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider cursor-pointer  transition duration-300"
+								className="bg-slate-200 border-b-1 border-slate-100 px-4 py-3 text-left text-xs font-semibold text-slate-600 uppercase tracking-wider cursor-pointer  transition duration-300"
 								onClick={() => handleSort(column.toLowerCase())}
 							>
 								{column}
